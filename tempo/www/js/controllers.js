@@ -11,7 +11,7 @@ angular.module('app.controllers', [])
     // when the response is available
   $scope.cidadeok = response.data["cidade"];
   $scope.temp = response.data.agora.temperatura;
-  $scope.Umidade = response.data.agora.humidade;
+  $scope.umidade = response.data.agora.humidade;
   $scope.visi = response.data.agora.visibilidade;
   $scope.vel = response.data.agora.vento_velocidade;
   $scope.pressao = response.data.agora.vento_direcao;
