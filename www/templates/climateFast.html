@@ -7,20 +7,21 @@
         </form>
     
         <button class="button button-stable button-block " ng-click="set(cidade)">Buscar</button>
-       
+<div align="center">
 <div class="row">
   <div class="col-25" style="padding:5px">
        <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
-            <img class="icon ion-image" src={{img}} style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></img>
+            <img class="ion-image" src={{img}} style="font-size: 64px; color: rgb(136, 136, 136);"></img>
         </div>
   </div>
   <div class="col-75">
-        <h3>Agora:</h3>
-            <strong>Cidade:</strong>
-            <span>{{cidadeok}}</span>
-            <br>
+      <div style="padding-bottom:7%;">
+        <h3>{{cidadeok}}</h3>
+        </div>
+        <div style="text-align:left">
+            
             <strong>Temperatura:</strong>
-            <span>{{temp}}</span>
+            <span>{{temp}}ºC</span>
             <br>
             <strong>Visibilidade:</strong>
             <span>{{visi}}</span>
@@ -39,7 +40,10 @@
             <br>
             <strong>Por do sol:</strong>
             <span>{{por}}</span>
+        </div>
       </div>
+     
 </div>
+ </div>
     </ion-content>
 </ion-view>
