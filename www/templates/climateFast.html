@@ -1,0 +1,45 @@
+<ion-view title="ClimateFast">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list">
+            <label class="item item-input">
+                <input ng-model="cidade" type="text" placeholder="Cidade-UF">
+            </label>
+        </form>
+    
+        <button class="button button-stable button-block " ng-click="set(cidade)">Buscar</button>
+       
+<div class="row">
+  <div class="col-25" style="padding:5px">
+       <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+            <img class="icon ion-image" src={{img}} style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></img>
+        </div>
+  </div>
+  <div class="col-75">
+        <h3>Agora:</h3>
+            <strong>Cidade:</strong>
+            <span>{{cidadeok}}</span>
+            <br>
+            <strong>Temperatura:</strong>
+            <span>{{temp}}</span>
+            <br>
+            <strong>Visibilidade:</strong>
+            <span>{{visi}}</span>
+            <br>
+            <strong>Velocidade do vento:</strong>
+            <span>{{vel}}</span>
+            <br>
+            <strong>Pressão:</strong>
+            <span>{{pressao}}</span>
+            <br>
+            <strong>Status Pressão:</strong>
+            <span>{{statu}}</span>
+            <br>
+            <strong>Nascer do sol:</strong>
+            <span>{{nasce}}</span>
+            <br>
+            <strong>Por do sol:</strong>
+            <span>{{por}}</span>
+      </div>
+</div>
+    </ion-content>
+</ion-view>
